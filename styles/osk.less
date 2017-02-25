@@ -1,0 +1,181 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ~~ STRUCTURE ~~
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+osk {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+osk-sidebar {
+  // height: 100%;
+  width: 5.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+osk-history-nav,
+osk-language-tab {
+  // flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+osk-sidebar > * {
+  flex-grow: 1;
+}
+
+// First tab matches up with topbar
+osk-sidebar:first-child {
+  flex-grow: 0;
+}
+
+osk-board-groups-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;  // Had `column`, check for bugs
+}
+
+osk-board-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+osk-topbar {
+  display: flex;
+  flex-direction: row;
+}
+
+osk-category-tab {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+osk-board-container,
+osk-board,
+osk-panel-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center; // for when it contains elements!
+}
+
+// osk-board {
+//   flex-grow: 1;
+// }
+
+osk-history-nav,
+osk-language-tab,
+osk-category-tab {
+  padding: 0.25rem;
+}
+
+// osk-panel-container {
+//   flex-grow: 1;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+osk-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+osk-panel-row,
+osk-panel-column {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+osk-panel-row {
+  flex-direction: row;
+}
+osk-panel-column {
+  flex-direction: column;
+}
+
+osk-key {
+  padding: 0.5rem;
+  margin: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 3rem;
+}
+
+.osk-space-bar {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ~~ SKIN ~~
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+osk,
+osk-history-nav,
+osk-language-tab,
+osk-category-tab,
+osk-key {
+  // For testing
+  border: 1px solid @inset-panel-background-color;
+}
+
+osk-board-group {
+  // For testing
+  border: 1px solid tomato;
+}
+
+osk-board {
+  // For testing
+  border: 1px solid green;
+}
+
+.osk-active-tab {
+  color: @text-color-selected;
+  background: @background-color-selected;
+}
+
+osk-key {
+  font-size: small;
+}
+
+.osk-tab:hover,
+osk-key:hover {
+  color: @text-color-highlight;
+  background: @background-color-highlight;
+  cursor: pointer;
+}
+
+// DEVVING INDICATORS
+// TODO: Atom "Style Guide" page should be searchable
+osk-key.empty {
+  border: 1px solid @text-color-error;
+}
+osk-key.complete {
+  border: 1px solid @text-color-success;
+}
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ~~ FUNCTION ~~
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+osk.hidden, osk .hidden {
+  display: 'none';
+}
