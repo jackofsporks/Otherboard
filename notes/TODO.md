@@ -3,7 +3,7 @@
 ##NAMES!!!!!!
 - OSK - On Screen Keyboard
 - Motherboard
-- Otherboard (OtherBoard/OB/Ob)
+- ***Otherboard (OtherBoard/OB/Ob)***
 
 ##Next Steps (01/30/17)
 ###Keys
