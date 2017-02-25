@@ -25,9 +25,9 @@
 ##Misc
 - ~~Hide app properly~~
 - Open/close package properly (serialization)
-- Initialize github repo
+- ~~Initialize github repo~~
 - Version (beta)
-- Publish? to npm
+- Publish? to npm? to atom?
 - Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())
 - Add nested columns and rows to row structure
 
