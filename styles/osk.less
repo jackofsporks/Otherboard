@@ -14,24 +14,25 @@ osk {
 }
 
 osk-sidebar {
-  // height: 100%;
-  width: 5.5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+osk-sidebar > * {
+  flex-grow: 1;
+}
+
 osk-history-nav,
 osk-language-tab {
-  // flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-osk-sidebar > * {
-  flex-grow: 1;
+osk-history-nav {
+  flex-grow: 0;
 }
 
 // First tab matches up with topbar
@@ -81,7 +82,7 @@ osk-panel-container {
 osk-history-nav,
 osk-language-tab,
 osk-category-tab {
-  padding: 0.25rem;
+  padding: .5rem .55rem;
 }
 
 // osk-panel-container {

@@ -26,13 +26,15 @@
 - ~~Hide app properly~~
 - Open/close package properly (serialization)
 - ~~Initialize github repo~~
-- Version (beta)
+- ~~Version (beta)~~
 - Publish? to npm? to atom?
-- Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())
+- ~~Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())~~
 - Add nested columns and rows to row structure
+- History
 
 ##Styling
-- Remove width style from left sidebar
+- ~~Remove width style from left sidebar~~
+- Switch everything to "rem"
 
 ##Dataz
 Each list item is made of three parts:
