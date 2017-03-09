@@ -3,8 +3,7 @@
   "main": "./lib/osk",
   "version": "0.1.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "osk:toggle"
   },
@@ -14,5 +13,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "loophole": "^1.1.0",
+    "vm": "^0.1.0"
+  },
+  "deserializers": {
+    "OSK": "deserializeOSK"
   }
 }
