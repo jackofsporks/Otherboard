@@ -24,7 +24,9 @@
 - Add settings and settings expansion bar (addon?)
 
 ##Misc
-- *******WHY IS ATOM'S `state` OBJECT EMPTY ON INITIALIZATION!?!?!?!?!?!?
+- Figure out how to serialize all the dataz: How to handle functions as strings (or not)
+- Make sure the default for active child/panel is not the last board in every board group
+- *******WHY IS ATOM'S `state` OBJECT EMPTY ON INITIALIZATION!?!?!?!?!?!? (because the documentation wasn't clear/obvious)
 - Open/close package properly (serialization)
   - Saving custom keyboard changes into file automatically???
 - Publish? to npm? to atom?
