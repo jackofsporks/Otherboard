@@ -39,11 +39,12 @@ deserialize(){
 ##Cons:
 - Not as flexible for the user
 ###What do we want the user to be able to persist?
-- Start a session with the panel they were last using
- - Including key searches (straight up serialization... path to key?)
-- Awareness of which panels were visible in various board groups and boards
-- History of navigation
-- History of position in the middle of a key operation that will lead to other panels
+- Start a session with the panel they were last using *(obj.savedPath - pathsObj?)*
+ - Including key searches (straight up serialization... path to key?) *(????)*
+- Awareness of which panels were visible in various board groups and boards *(same)*
+- History of navigation *(history obj)*
+- History of position in the middle of a key operation that will lead to other panels *(pass callback to key func?????)*
+- Settings (style and such) *(settings obj)*
 - Ultimately:
  - Create custom keyboards
   - Custom keys from scratch (select and drag in text to create snippet...cursor placements?)
@@ -53,3 +54,17 @@ deserialize(){
   - Custom key icons
  - Custom styles
  - Custom animations?
+
+------------------------------------
+
+#Conclusion
+
+Option 3, serialize an object like this:
+
+```js
+  {
+    paths: {}, // serialized in each object
+    history: [],
+    settings: {}
+  }
+```

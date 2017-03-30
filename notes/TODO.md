@@ -24,15 +24,19 @@
 - Add settings and settings expansion bar (addon?)
 
 ##Misc
+- Undo button
+- Composables instead of inheritance
+- Simple template for config, deserialization, & serialization
 - Figure out how to serialize all the dataz: How to handle functions as strings (or not)
 - Make sure the default for active child/panel is not the last board in every board group
-- *******WHY IS ATOM'S `state` OBJECT EMPTY ON INITIALIZATION!?!?!?!?!?!? (because the documentation wasn't clear/obvious)
 - Open/close package properly (serialization)
   - Saving custom keyboard changes into file automatically???
 - Publish? to npm? to atom?
 - Add nested columns and rows to row structure
 - History
+ - Animations
 - "Outdent" as well as indent key (outdent key? or add a Shift key?) <- how to simulate holding down a modifier key?
+- ~~*******WHY IS ATOM'S `state` OBJECT EMPTY ON INITIALIZATION!?!?!?!?!?!? (because the documentation wasn't clear/obvious)~~
 - ~~Hide app properly~~
 - ~~Initialize github repo~~
 - ~~Version (beta)~~
