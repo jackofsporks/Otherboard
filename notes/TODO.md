@@ -16,7 +16,7 @@
 - info?
 - style keys based on action
 - Insert snippets
-  - Find an npm sippet manager for atom and install/save it
+  - Find an npm snippet manager for atom and install/save it
   - TODO: Use user's own snippet manager
 - ~~Simulate actual keypresses (for keys like 'del' and modifier keys)~~
 
