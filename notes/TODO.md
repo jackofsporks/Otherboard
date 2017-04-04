@@ -24,6 +24,7 @@
 - Add settings and settings expansion bar (addon?)
 
 ##Misc
+- Toggle disappearance with esc key maybe, but search field esc takes precedence
 - Undo button
 - Composables instead of inheritance
 - Simple template for config, deserialization, & serialization
@@ -65,6 +66,10 @@ Each list item is made of three parts:
 - sub-properties
 - classes
 - ids
+
+#Research
+- Alternative environments
+ - Visual Studio Code (mobile devices?)
 
 #Unrelated
 - File issue in snippet package to use `let` in for loops instead of `var`
