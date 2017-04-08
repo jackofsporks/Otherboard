@@ -16,6 +16,13 @@ osk-app {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    transition: max-height 0.2s;
+    max-height: 100rem;
+}
+
+osk-app.minimized {
+  max-height: 0;
+  transition: max-height 0.2s;
 }
 
 osk-sidebar {
@@ -49,6 +56,7 @@ osk-board-groups-container {
   flex-grow: 1;
   display: flex;
   flex-direction: row;  // Had `column`, check for bugs
+  align-items: baseline;  // Needed for minimizing without showing contents
 }
 
 osk-board-group {

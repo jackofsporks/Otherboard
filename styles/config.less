@@ -47,7 +47,7 @@ osk-config {
   flex-direction: row;
   justify-content: space-around;
   overflow: scroll;
-  transition: height 1s;
+  transition: max-height 0.2s, padding 0.2s;
   border-top: 1px solid @inset-panel-background-color;
   background: @input-background-color;
   padding: 1rem;
@@ -55,7 +55,7 @@ osk-config {
 
 .closed #osk-config-bottom {
   height: 0;
-  transition: height 1s;
+  transition: max-height 0.2s, padding 0.2s;
   // Otherwise a height of 10, maybe for scrollbar
   overflow: hidden;
   border-top: 0;
@@ -65,26 +65,33 @@ osk-config {
 osk .icon::before {
   margin: 0;
   width: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 osk .icon {
-  margin: 0.2rem 0.2rem;
-  padding: 0.1rem 0.2rem;
+  margin: 0rem 0.2rem;
+  padding: 0rem 0.2rem;
 }
 
 #osk-close:hover, #osk-close:active {
   background: @background-color-error;
+  color: @text-color-selected;
   opacity: 0.7;
 }
 
-#osk-close {
+#osk-close, osk .icon-plus {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // display: none;
+  align-items: center;
 }
 
-#osk-close::before {
+#osk-close::before, osk .icon-plus::before {
     font-size: 1.3rem;
     height: 1em;
+}
+
+#osk-minimize:hover, #osk-minimize:active {
+  background: @background-color-info;
+  color: @text-color-selected;
+  opacity: 0.7;
 }

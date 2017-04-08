@@ -45,6 +45,11 @@
 - ~~Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())~~
 
 ##Settings
+- Problem: settings take up precious vertical space and isn't used a lot. Solution 1: Settings as a right sidebar vs. topbar
+  - Takes up less vertical space
+  - There's plenty of horizontal space in this environment
+  - Doesn't look as good
+  - Minimizing a bit more awkward visually
 - Settings icon... somewhere...?
 - Open/close settings
 - Close/minify/magnify osk
