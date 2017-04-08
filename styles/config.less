@@ -1,0 +1,90 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+osk-config {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.osk-topper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: @background-color-highlight;
+}
+
+.closed .osk-topper {
+  background: @app-background-color;
+}
+
+.osk-topper:hover {
+  color: @text-color-highlight;
+  background: @background-color-highlight;
+  cursor: pointer;
+}
+
+.osk-topper-child {}
+
+.osk-left, .osk-center, .osk-right {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.osk-left { justify-content: flex-start; }
+
+.osk-center { justify-content: center; }
+
+.osk-right { justify-content: right; }
+
+#osk-config-bottom {
+  max-height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: scroll;
+  transition: height 1s;
+  border-top: 1px solid @inset-panel-background-color;
+  background: @input-background-color;
+  padding: 1rem;
+}
+
+.closed #osk-config-bottom {
+  height: 0;
+  transition: height 1s;
+  // Otherwise a height of 10, maybe for scrollbar
+  overflow: hidden;
+  border-top: 0;
+  padding: 0;
+}
+
+osk .icon::before {
+  margin: 0;
+  width: 1rem;
+}
+
+osk .icon {
+  margin: 0.2rem 0.2rem;
+  padding: 0.1rem 0.2rem;
+}
+
+#osk-close:hover, #osk-close:active {
+  background: @background-color-error;
+  opacity: 0.7;
+}
+
+#osk-close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // display: none;
+}
+
+#osk-close::before {
+    font-size: 1.3rem;
+    height: 1em;
+}

@@ -9,8 +9,13 @@
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 osk {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+
+osk-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 osk-sidebar {
@@ -136,7 +141,7 @@ osk-language-tab,
 osk-category-tab,
 osk-key {
   // For testing
-  border: 1px solid @inset-panel-background-color;
+  border: 1px solid @background-color-highlight;
 }
 
 osk-board-group {

@@ -24,6 +24,7 @@
 - Add settings and settings expansion bar (addon?)
 
 ##Misc
+- Temporary minimize, not toggle off
 - Toggle disappearance with esc key maybe, but search field esc takes precedence
 - Undo button
 - Composables instead of inheritance
@@ -42,6 +43,12 @@
 - ~~Initialize github repo~~
 - ~~Version (beta)~~
 - ~~Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())~~
+
+##Settings
+- Settings icon... somewhere...?
+- Open/close settings
+- Close/minify/magnify osk
+- Search bar...? (in the distant future)
 
 ##Styling
 - ~~Remove width style from left sidebar~~
