@@ -54,6 +54,7 @@
 - Open/close settings
 - Close/minify/magnify osk
 - Search bar...? (in the distant future)
+- Can configure min/max/close to be on the left instead??? (if horizontal)
 
 ##Styling
 - ~~Remove width style from left sidebar~~
