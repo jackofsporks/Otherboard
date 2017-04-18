@@ -24,6 +24,8 @@
 - Add settings and settings expansion bar (addon?)
 
 ##Misc
+- Check if node packages are still needed
+- Add `debug` to `findPathTarget()` ("getPathTarget"???) that will trigger certain console logs
 - Temporary minimize, not toggle off
 - Toggle disappearance with esc key maybe, but search field esc takes precedence
 - Undo button
@@ -45,6 +47,7 @@
 - ~~Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())~~
 
 ##Settings
+- Keep gear icon highlighted when config is open...
 - Problem: settings take up precious vertical space and isn't used a lot. Solution 1: Settings as a right sidebar vs. topbar
   - Takes up less vertical space
   - There's plenty of horizontal space in this environment
