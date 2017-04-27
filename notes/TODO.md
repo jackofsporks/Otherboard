@@ -1,13 +1,21 @@
-#Project
+# Project
 
-##NAMES!!!!!!
+## NAMES!!!!!!
 - OSK - On Screen Keyboard
 - Motherboard
 - ***Otherboard (OtherBoard/OB/Ob)***
 - https://www.namecheckr.com/
 
-##Next Steps (01/30/17)
-###Keys
+## Next Steps (01/30/17)
+### Keys
+- UFT-8 board for inserting HTML symbols into HTML as text
+- User values include:
+  - classes
+  - ids
+  - colors on the page!!!!!!!
+  - other values...
+- shortcuts: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey
+  - how is tab order determined?
 - key data
   - navigation functions/types
   - snippet insertion
@@ -20,10 +28,27 @@
   - TODO: Use user's own snippet manager
 - ~~Simulate actual keypresses (for keys like 'del' and modifier keys)~~
 
-###Customization
-- Add settings and settings expansion bar (addon?)
+### Snippets
+#### Blank Slates
+- HTML
+  - <|><\|>
+- CSS
+  - div.className {
+    width: 100%;
+  }
+- QUESTIONS
+  - Insert HTML snippet then still go to an Attributes panel?!?!?!
+  - For all elements, or just for some?!?!
+  - If we're not going to switch to an Attributes panel, then should "class" and "id", etc., still be on all Elements panels?!?!
 
-##Misc
+### Customization
+- Add settings and settings expansion bar (addon?)
+- Replace keys of row that's always there (with existing keys)
+
+## Misc
+- Scrollable top two rows?!!?!?!? (maybe more if there's not a default row as the third row)
+- Make sure cursor doesn't move when clicking on the board
+- Is it convenient or is it confusing to have attributes on the third row of panels for html elements????!?!?
 - Check if node packages are still needed
 - Add `debug` to `findPathTarget()` ("getPathTarget"???) that will trigger certain console logs
 - Temporary minimize, not toggle off
@@ -40,13 +65,15 @@
 - History
  - Animations
 - "Outdent" as well as indent key (outdent key? or add a Shift key?) <- how to simulate holding down a modifier key?
+- QUESTION - Make sure each board group has an even number of tabs so no one can tell the keyboard doesn't look centered underneath... :S
+  - Ooooor float tabs to the left (and maybe make them look more like tabs???)
 - ~~*******WHY IS ATOM'S `state` OBJECT EMPTY ON INITIALIZATION!?!?!?!?!?!? (because the documentation wasn't clear/obvious)~~
 - ~~Hide app properly~~
 - ~~Initialize github repo~~
 - ~~Version (beta)~~
 - ~~Refactor view vs. activate objects (currently calling obj.view.show() vs. obj.show() or obj.activate())~~
 
-##Settings
+## Settings
 - Keep gear icon highlighted when config is open...
 - Problem: settings take up precious vertical space and isn't used a lot. Solution 1: Settings as a right sidebar vs. topbar
   - Takes up less vertical space
@@ -59,23 +86,23 @@
 - Search bar...? (in the distant future)
 - Can configure min/max/close to be on the left instead??? (if horizontal)
 
-##Styling
+## Styling
 - ~~Remove width style from left sidebar~~
 - ~~Switch everything to "rem"~~
 
-##Dataz
+## Dataz
 Each list item is made of three parts:
 - most common
 - less common
 - rare
 
-##HTML
+## HTML
 - elements/tags
 - attributes
 - attribute values
 - sub-attributes
 - classes (no ids??? in-page link use?)
-##CSS
+## CSS
 - selectors
 - properties
 - property values
@@ -83,9 +110,10 @@ Each list item is made of three parts:
 - classes
 - ids
 
-#Research
+# Research
 - Alternative environments
  - Visual Studio Code (mobile devices?)
 
-#Unrelated
+# Unrelated
 - File issue in snippet package to use `let` in for loops instead of `var`
+- File caniuse github issue for "translate" global attribute of HTML
