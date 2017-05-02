@@ -17,7 +17,7 @@ osk-app {
     flex-direction: row;
     justify-content: flex-start;
     transition: max-height 0.2s;
-    max-height: 100rem;
+    max-height: 100em;
 }
 
 osk-app.minimized {
@@ -95,7 +95,7 @@ osk-panel-container {
 osk-history-nav,
 osk-language-tab,
 osk-category-tab {
-  padding: .5rem .55rem;
+  padding: .5em .55em;
 }
 
 // osk-panel-container {
@@ -134,18 +134,24 @@ osk-panel-column.right-aligned {
 }
 
 osk-key {
-  padding: 0.5rem;
-  margin: 0.25rem;
+  padding: 0.5em;
+  margin: 0.25em;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  min-width: 3rem;
+  min-width: 3em;
+  min-height: 2.55em;
 }
 
-.osk-space-bar {
-  padding-left: 3rem;
-  padding-right: 3rem;
+osk-key.blank {
+  border: none;
+  pointer-events: none;
+}
+
+osk-key.blank:hover {
+  background: none;
+  pointer-events: none;
 }
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -164,7 +170,7 @@ osk-board-group {
   // For testing
   border: 1px solid tomato;
 }
-0.1rem
+0.1em
 osk-board {
   // For testing
   border: 1px solid green;
@@ -176,7 +182,7 @@ osk-board {
 }
 
 osk-key {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 osk-key.navigation {
