@@ -7,13 +7,20 @@
 - https://www.namecheckr.com/
 
 ## Next Steps (01/30/17)
+### Panels
+- Values home page could be
+  - a menu page
+  - a bunch of common dimension/color/file extension keys (or there could be a separate board/page for all of these, but name...?!?!)
+
 ### Keys
+- Find css way to center space key (3 columns, flex: 1 on outer, flex: 0 on center?)
 - UFT-8 board for inserting HTML symbols into HTML as text
 - User values include:
   - classes
   - ids
   - colors on the page!!!!!!!
   - other values...
+  - Parse content of page to get user values/attributes/w/e (https://www.npmjs.com/package/posthtml-parser)
 - shortcuts: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey
   - how is tab order determined?
 - key data
@@ -27,6 +34,7 @@
   - Find an npm snippet manager for atom and install/save it
   - TODO: Use user's own snippet manager
 - ~~Simulate actual keypresses (for keys like 'del' and modifier keys)~~
+- ~~Have dynamic names so keys can have different names in different boards or let the board assign the name (content: ["attrs.Global_Attributes_Page_1>>Page 1"] vs. content: ["attrs.Global_Attributes_Page_1>>Global"] or just default content: ["attrs.Global_Attributes_Page_1"])~~
 
 ### Snippets
 #### Blank Slates
@@ -46,6 +54,8 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
+- Allow scrollable tabs on sidebar and topbar + arrow elements to let you click to scroll by the height of a tab (if there is nothing to scroll to, dim the arrow)
+- Load panels only if/when they get opened
 - Scrollable top two rows?!!?!?!? (maybe more if there's not a default row as the third row)
 - Make sure cursor doesn't move when clicking on the board
 - Is it convenient or is it confusing to have attributes on the third row of panels for html elements????!?!?

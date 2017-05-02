@@ -125,6 +125,14 @@ osk-panel-column {
   flex-direction: column;
 }
 
+// NOTE this assumes row direction is always left to right
+osk-panel-column.left-aligned {
+  align-items: flex-start;
+}
+osk-panel-column.right-aligned {
+  align-items: flex-end;
+}
+
 osk-key {
   padding: 0.5rem;
   margin: 0.25rem;

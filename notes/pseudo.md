@@ -144,7 +144,7 @@ or
 
 ``` js
 function iterate(remainder, parentNode) {
-  if remainder has content
+  // if remainder has content ( no item without content is ever handed in )
     for item in content
 
       if row
