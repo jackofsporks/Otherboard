@@ -54,6 +54,7 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
+- WARNING scoped id's won't work when being searched for
 - Allow scrollable tabs on sidebar and topbar + arrow elements to let you click to scroll by the height of a tab (if there is nothing to scroll to, dim the arrow)
 - Load panels only if/when they get opened
 - Scrollable top two rows?!!?!?!? (maybe more if there's not a default row as the third row)
