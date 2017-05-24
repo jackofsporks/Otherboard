@@ -25,6 +25,16 @@ osk-app.minimized {
   transition: max-height 0.2s;
 }
 
+// // Otherwise stuff is showing
+// osk-app#oskApp.minimized *,
+// osk-app#oskApp.minimized *::before {
+//     height: 0;
+//     padding: 0;
+//     margin: 0;
+//     border: 0;
+//     font-size: 0;
+// }
+
 osk-sidebar {
   display: flex;
   flex-direction: column;
@@ -88,21 +98,11 @@ osk-panel-container {
   align-content: center; // for when it contains elements!
 }
 
-// osk-board {
-//   flex-grow: 1;
-// }
-
-osk-history-nav,
+osk-history-nav .history-arrow,
 osk-language-tab,
 osk-category-tab {
   padding: .5em .55em;
 }
-
-// osk-panel-container {
-//   flex-grow: 1;
-//   display: flex;
-//   flex-direction: column;
-// }
 
 osk-panel {
   display: flex;
@@ -133,7 +133,17 @@ osk-panel-column.right-aligned {
   align-items: flex-end;
 }
 
-osk-key {
+osk-panel-row.bottom-row {
+  width: 100%; // Stuff can't grow otherwise
+  .center {
+    flex: 0;
+  }
+  .left, .right {
+    flex: 1;
+  }
+}
+
+button.osk-key {
   padding: 0.5em;
   margin: 0.25em;
   display: flex;
@@ -144,53 +154,99 @@ osk-key {
   min-height: 2.55em;
 }
 
-osk-key.blank {
+button.osk-key.blank {
   border: none;
   pointer-events: none;
 }
 
-osk-key.blank:hover {
+button.osk-key.blank:hover {
   background: none;
   pointer-events: none;
+}
+
+osk .disabled,
+osk .disabled:hover,
+osk .disabled:active {
+  opacity: .4;
+  color: @text-color-subtle;
+  background: @app-background-color;
 }
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // ~~ SKIN ~~
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-osk,
+@inactive-border: lighten(@base-background-color, 1%);
+@active-border: lighten(@base-background-color, 5%);
+@key-border: lighten(@base-background-color, 10%);
+
+osk {
+  border-bottom: 1px solid @active-border;
+}
+
+osk, button.osk-key {
+  background: @tool-panel-background-color;
+}
+
 osk-history-nav,
 osk-language-tab,
 osk-category-tab,
-osk-key {
-  // For testing
-  border: 1px solid @background-color-highlight;
+osk-config-triggers {
+  color: @text-color;
+  background-color: darken(@tool-panel-background-color, 1.8%);
 }
 
-osk-board-group {
-  // For testing
-  border: 1px solid tomato;
-}
-0.1em
-osk-board {
-  // For testing
-  border: 1px solid green;
+osk-history-nav,
+osk-language-tab,
+osk-category-tab {
+  border: 1px solid @active-border;
 }
 
 .osk-active-tab {
-  color: @text-color-selected;
-  background: @background-color-selected;
+  color: @text-color-highlight;
+  background: @tool-panel-background-color;
+  border: 1px solid @active-border;
 }
 
-osk-key {
+osk-category-tab {
+  border-left-color: @inactive-border;
+  border-right-color: @inactive-border;
+  border-top: none;
+  &:first-child {
+    border-left: none;
+  }
+  &.osk-active-tab {
+    border-bottom: none;
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
+
+osk-history-nav,
+osk-language-tab {
+  border-bottom: none;
+}
+
+osk-language-tab {
+  border-top-color: @inactive-border;
+  &.osk-active-tab {
+    border-right: none;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+button.osk-key {
+  border: 1px solid @key-border;
   font-size: 1em;
-}
-
-osk-key.navigation {
-  text-decoration: underline;
+  &.navigation {
+    text-decoration: underline;
+  }
 }
 
 .osk-tab:hover,
-osk-key:hover {
+button.osk-key:hover {
   color: @text-color-highlight;
   background: @background-color-highlight;
   cursor: pointer;
@@ -198,10 +254,10 @@ osk-key:hover {
 
 // DEVVING INDICATORS
 // TODO: Atom "Style Guide" page should be searchable
-osk-key.empty {
+button.osk-key.empty {
   border: 1px solid @text-color-error;
 }
-osk-key.complete {
+button.osk-key.complete {
   border: 1px solid @text-color-success;
 }
 

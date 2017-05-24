@@ -4,63 +4,44 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@inactive-border: lighten(@base-background-color, 1%);
+@active-border: lighten(@base-background-color, 5%);
+
 osk-config-triggers, osk-minibar {
-// .osk-topper {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  // background: @background-color-highlight;
   align-items: stretch;
+}
+
+osk-config-triggers {
+  border-bottom: 1px solid @active-border;
+  border-left: 1px solid @inactive-border;
 }
 
 osk osk-minibar .icon {
   padding: 0.4rem .6rem;
 }
 
-// .closed .osk-topper {
-//   background: @app-background-color;
-// }
-
-// .osk-topper:hover {
-//   color: @text-color-highlight;
-//   background: @background-color-highlight;
-//   cursor: pointer;
-// }
-
-// .osk-topper-child {}
-
-// .osk-left, .osk-center, .osk-right {
-//   display: flex;
-//   flex-direction: row;
-//   align-content: center;
-// }
-
-// .osk-left { justify-content: flex-start; }
-//
-// .osk-center { justify-content: center; }
-//
-// .osk-right { justify-content: right; }
-
 osk-config {
-// #osk-config-bottom {
   max-height: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   overflow: scroll;
   transition: max-height 0.2s, padding 0.2s;
-  border-top: 1px solid @inset-panel-background-color;
-  background: @input-background-color;
+  border-top: 1px solid @active-border;
+  border-left: 1px solid @active-border;
+  border-bottom: 1px solid @active-border;
   padding: 1rem;
 }
 
 osk-config.closed, osk-minibar.closed {
-// .closed #osk-config-bottom {
   height: 0;
   transition: max-height 0.2s, padding 0.2s;
   // Otherwise a height of 10, maybe for scrollbar
   overflow: hidden;
-  border-top: 0;
+  border: none;
   padding: 0;
 }
 

@@ -159,3 +159,109 @@ function iterate(remainder, parentNode) {
         iterate( itemContent, node )
 }
 ```
+
+
+# Composition
+## Objects
+### Base
+- Properties
+  - config
+  - id
+  - displayName
+  - parent
+  - node (xxx --> view)
+  - tags
+  - classes
+  - children (xxx --> Parent)
+  - pathTo
+- Methods
+  - show
+  - hide
+  - destroy
+  - set
+### Parent
+- Properties
+  - scripts
+  - requires
+  - children
+- Methods
+  - NewChild
+  - add
+  - remove
+  - get
+  - getBy
+  - saveOpenPanel
+### OSK
+- Properties
+  - isOpen
+  - type (unique)
+  - history
+- Methods
+  - serialize
+  - minimize
+  - maximize
+  - open
+  - close
+  - toggle
+  - saveReset
+  - handleHistory
+  - saveOpenPanel (unique)
+### Board Groups
+- Properties
+  - type (unique)
+### Boards
+- Properties
+  - type (unique)
+### Panels
+- Properties
+  - type (unique)
+  - config (xxx --> Base)
+  - helpers (x? parent has stuff)
+  - requires (x? parent has stuff)
+  - content
+- Methods
+  - show (unique)
+  - getKeySource
+### Keys
+- Properties
+  - type
+  - toSimulate
+  - path
+  - activate
+### Rows/Columns
+### History
+- Properties
+  - data
+  - position
+  - osk
+- Methods
+  - back
+  - forward
+  - newRecord
+  - show (showPanel)
+### Config?
+
+<!-- TODO -->
+## View
+### OSK
+### Board Groups
+### Boards
+### Panels
+### Keys
+### Rows/Columns
+### History
+### Config?
+
+
+## Navigation Sequence Shorthand/Objects
+|<input>| --> <input type="$"> -->
+|button| --> <input type="button"> -->
+|value| --> <input type="button" value="$"> -->
+|abc|
+
+|<img>| --> <img src=""> -->
+|abc|??|file extensions|.jpg| (dynamically added link to file extensions? (depending on where navigation came from)) (Just image extensions? Gray out others? Use searching functionality which does not exist????)
+
+Any element insertion leads directly to attributes?
+
+Maybe leave complex navigation sequences for partII of the project... :'(
