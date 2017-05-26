@@ -9,9 +9,38 @@
 ## Next Actual Step (05/??/17)
 - Snippets and multi-action/navigation/cursor keys
 
-## Next Steps (01/30/17)
+## Next Steps
+### Part I
+- Config as actual useful object
+- Clean up where visual stuffs is happening (example: osk minimizing)
+- Compose `View` objects
+- Inserting snippets
+- Info boxes for keys (use library of awesome snippet manager I have yet to identify)
+- TESTING (TDM - Test Driven Maintenance)
+  - Jest? (from wowsoclutch) (snapshots!)
+    - https://facebook.github.io/jest/
+    - https://facebook.github.io/jest/docs/snapshot-testing.html
+
+#### Research
+- package configs in atom and how those look
+- diagram test ideas
+- snippets
+
+### Part D(ata)
+- User created variables/words
+- UTF-8 symbols panel
+- color names panel (with real colors!)
+- All the other things
+
+### Part II
+- Oh, the mystery
+- Multi-action/navigation
+
+#### Research
+- bockly
+
 ### Panels
-- Part II --> Values home page could be
+- Part D(ata) --> Values home page could be
   - a menu page
   - a bunch of common dimension/color/file extension keys (or there could be a separate board/page for all of these, but name...?!?!)
 
@@ -42,7 +71,7 @@
   - Find an npm snippet manager for atom and install/save it
   - TODO: Use user's own snippet manager
   - add navigation sequences
-- --> Shorthand/obj for navigation sequences
+- ~~-->~~ Shorthand/obj for navigation sequences (Part II)
 - Style highlighting for keys using the user's chosen themes!!!! (but how.....???)
 - Style css color names and colors as their color (calculate contrast from background to switch background color when needed)
 - ~~Simulate actual keypresses (for keys like 'del' and modifier keys)~~
@@ -70,7 +99,7 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
-- Minimize --> Toggle (gone) --> Toggle (back) = still minimized?!? Expected behavior?!?! (probably expecting to be open)
+- ~~Minimize --> Toggle (gone) --> Toggle (back) = still minimized?!? Expected behavior?!?! (probably expecting to be open)~~
 - Nested requires so they don't have to be repeated for each panel
 - Composable View objects
 - --> Board navigation animations
@@ -165,6 +194,7 @@ Each list item is made of three parts:
 # Research
 - Alternative environments
  - Visual Studio Code (mobile devices?)
+- https://arstechnica.com/apple/2012/05/25-years-of-hypercard-the-missing-link-to-the-web/ (wowsoclutch)
 
 # Unrelated
 - File issue in snippet package to use `let` in for loops instead of `var`
@@ -175,6 +205,8 @@ Each list item is made of three parts:
 - CHECK IT OUT!!!  https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web
 - ~~funfunfunction on compositional inheritance~~
 - Simple template for config, deserialization, & serialization
+- Find utubs vid: "On The Turing Completeness of PowerPoint" (from xartuo)
+- https://arstechnica.com/apple/2012/05/25-years-of-hypercard-the-missing-link-to-the-web/ (wowsoclutch)
 
 # Technical Questions
 
