@@ -80,7 +80,8 @@ osk-topbar {
   flex-direction: row;
 }
 
-osk-category-tab {
+osk-category-tab,
+osk-options-tab {
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -100,7 +101,8 @@ osk-panel-container {
 
 osk-history-nav .history-arrow,
 osk-language-tab,
-osk-category-tab {
+osk-category-tab,
+osk-options-tab {
   padding: .5em .55em;
 }
 
@@ -190,6 +192,7 @@ osk, button.osk-key {
 osk-history-nav,
 osk-language-tab,
 osk-category-tab,
+osk-options-tab,
 osk-config-triggers {
   color: @text-color;
   background-color: darken(@tool-panel-background-color, 1.8%);
@@ -197,7 +200,8 @@ osk-config-triggers {
 
 osk-history-nav,
 osk-language-tab,
-osk-category-tab {
+osk-category-tab,
+osk-options-tab {
   border: 1px solid @active-border;
 }
 
@@ -207,7 +211,8 @@ osk-category-tab {
   border: 1px solid @active-border;
 }
 
-osk-category-tab {
+osk-category-tab,
+osk-options-tab {
   border-left-color: @inactive-border;
   border-right-color: @inactive-border;
   border-top: none;

@@ -99,7 +99,9 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
-- ~~Minimize --> Toggle (gone) --> Toggle (back) = still minimized?!? Expected behavior?!?! (probably expecting to be open)~~
+- When currently open board group or board is hovered over, it should not change color
+- Make sure cursor doesn't move when clicking on the board (if insert text, cursor loses place. WHY!?)
+- Research disposing of event listeners.
 - Nested requires so they don't have to be repeated for each panel
 - Composable View objects
 - --> Board navigation animations
@@ -133,11 +135,11 @@
 - ~~Add nested columns and rows to row structure~~
 - ~~Open/close package properly (serialization)~~
   - Saving custom keyboard changes into file automatically???
-- ~~Make sure cursor doesn't move when clicking on the board (it don't)~~
 - ~~Is it convenient or is it confusing to have attributes on the third row of panels for html elements????!?!?
   - Target audience indicated it was confusing~~
 - ~~"dimmed" class for dimmed... stuff...~~ ("disabled")
 - ~~Temporary minimize, not toggle off~~
+- ~~Minimize --> Toggle (gone) --> Toggle (back) = still minimized?!? Expected behavior?!?! (probably expecting to be open)~~
 
 ##Stylin'
 - ~~Tabs to blend into panel when active, everything else has a bottom border. Switch colors.~~
@@ -207,6 +209,10 @@ Each list item is made of three parts:
 - Simple template for config, deserialization, & serialization
 - Find utubs vid: "On The Turing Completeness of PowerPoint" (from xartuo)
 - https://arstechnica.com/apple/2012/05/25-years-of-hypercard-the-missing-link-to-the-web/ (wowsoclutch)
+- File Atom issue to clarify "object / Grouping other types" in https://atom.io/docs/api/v1.17.2/Config <-- how to access nested object values with getting and setting
+- https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a (wowsoclutch)
+- https://softwareengineering.stackexchange.com/questions/110936/what-are-the-advantages-of-prototype-based-oop-over-class-based-oop (wowsoclutch)
+- https://vimeo.com/69255635 (wowsoclutch)
 
 # Technical Questions
 
