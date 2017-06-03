@@ -3,6 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "osk-ui-variables";
 
 osk-history-nav .history-arrow:hover {
   color: @text-color-highlight;
@@ -15,18 +16,13 @@ osk-history-nav .history-arrow:active {
   background: @background-color-selected;
 }
 
-osk-history-nav .history-arrow:active {
-  color: @text-color-selected;
-  background: @background-color-selected;
-}
-
 osk-history-nav .icon-triangle-left {
-  border-right: 1px solid @background-color-highlight;
+  border-right: 1px solid @inactive-border;
 }
 
-osk-history-nav .icon-triangle-right {
-  border-left: 1px solid @background-color-highlight;
-}
+// osk-history-nav .icon-triangle-right {
+//   border-left: 1px solid @background-color-highlight;
+// }
 
 // General "disabled" class in main file
 // .history-arrow.disabled,

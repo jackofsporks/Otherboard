@@ -11,18 +11,18 @@
 
 ## Next Steps
 ### Part I
-- Config as actual useful object
+- ~~Config as actual useful object~~ (mostly)
 - Clean up where visual stuffs is happening (example: osk minimizing)
 - Compose `View` objects
 - Inserting snippets
-- Info boxes for keys (use library of awesome snippet manager I have yet to identify)
+- Info boxes for keys (use library of awesome snippet manager I have yet to identify) (maybe Part III)
 - TESTING (TDM - Test Driven Maintenance)
   - Jest? (from wowsoclutch) (snapshots!)
     - https://facebook.github.io/jest/
     - https://facebook.github.io/jest/docs/snapshot-testing.html
 
-#### Research
-- package configs in atom and how those look
+#### Part I Research
+- ~~package configs in atom and how those look~~
 - diagram test ideas
 - snippets
 
@@ -169,7 +169,11 @@
   - realize (alternate meanings)
   - actualize (suuuuuper fancy)~~
 
+## DOM
+- top bar to contain tab section and config section separately
+
 ## Styling
+- Way to install different themes for boardz
 - ~~Remove width style from left sidebar~~
 - ~~Switch everything to "rem"~~
 
@@ -213,6 +217,8 @@ Each list item is made of three parts:
 - https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a (wowsoclutch)
 - https://softwareengineering.stackexchange.com/questions/110936/what-are-the-advantages-of-prototype-based-oop-over-class-based-oop (wowsoclutch)
 - https://vimeo.com/69255635 (wowsoclutch)
+- Get those ears on 'hey young world' by slick rick (wowsoclutch)
+- Also hear 'Lemon Jelly - Nice weather for Ducks' (wowsoclutch)
 
 # Technical Questions
 

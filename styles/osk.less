@@ -3,6 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "osk-ui-variables";
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // ~~ STRUCTURE ~~
@@ -169,18 +170,14 @@ button.osk-key.blank:hover {
 osk .disabled,
 osk .disabled:hover,
 osk .disabled:active {
-  opacity: .4;
-  color: @text-color-subtle;
-  background: @app-background-color;
+  // opacity: .4;
+  color: @dim-color;
+  background: @dark-background;
 }
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // ~~ SKIN ~~
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-@inactive-border: lighten(@base-background-color, 1%);
-@active-border: lighten(@base-background-color, 5%);
-@key-border: lighten(@base-background-color, 10%);
-
 osk {
   border-bottom: 1px solid @active-border;
 }
@@ -195,7 +192,8 @@ osk-category-tab,
 osk-options-tab,
 osk-config-triggers {
   color: @text-color;
-  background-color: darken(@tool-panel-background-color, 1.8%);
+  background-color: @dark-background;
+  // background-color: darken(@tool-panel-background-color, 1.8%);
 }
 
 osk-history-nav,
@@ -208,14 +206,14 @@ osk-options-tab {
 .osk-active-tab {
   color: @text-color-highlight;
   background: @tool-panel-background-color;
-  border: 1px solid @active-border;
+  // border: 1px solid @active-border;
 }
 
 osk-category-tab,
 osk-options-tab {
   border-left-color: @inactive-border;
-  border-right-color: @inactive-border;
-  border-top: none;
+  border-right: none;
+  border-top: 1px solid @active-border;
   &:first-child {
     border-left: none;
   }
@@ -234,6 +232,9 @@ osk-language-tab {
 
 osk-language-tab {
   border-top-color: @inactive-border;
+  &:nth-child(2) { // first child is history
+    border-top-color: @active-border;
+  }
   &.osk-active-tab {
     border-right: none;
     &:last-child {
@@ -241,6 +242,12 @@ osk-language-tab {
     }
   }
 }
+
+// osk-history-arrow {
+//   &:first-child {
+//     border-right: none;
+//   }
+// }
 
 button.osk-key {
   border: 1px solid @key-border;
