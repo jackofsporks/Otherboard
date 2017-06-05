@@ -80,12 +80,14 @@ osk .icon {
   opacity: 0.7;
 }
 
-.osk-config-toggle:hover {
+.osk-config-toggle:hover,
+.osk-config-toggle.osk-config-open:hover {
   color: @text-color-highlight;
   background: @background-color-highlight;
 }
 
-.osk-config-toggle:active {
+.osk-config-toggle:active,
+.osk-config-toggle.osk-config-open {
   color: @text-color-selected;
   background: @background-color-selected;
 }

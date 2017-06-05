@@ -22,12 +22,19 @@
     - https://facebook.github.io/jest/docs/snapshot-testing.html
 
 #### Part I Research
+- keyboard integration
+- snippets (https://github.com/atom/snippets/blob/master/lib/snippets.coffee)
+  - on hover or touch
+    - show snippet on insertion/paste
+    - intercept "populate" or w/e and stick it with the panel key instead of the... text? Cursor? (https://github.com/atom/snippets/blob/master/lib/snippets.coffee#L302)
+  - on click/lift in the same key/key's snippet choices
+    - insert snippet
+- (abandoned because of cowardice) diagram test/spec ideas
 - ~~package configs in atom and how those look~~
-- diagram test ideas
-- snippets
 
 ### Part D(ata)
 - User created variables/words
+  - parsing available vars --> https://github.com/atom/snippets/blob/master/lib/snippets-available.js
 - UTF-8 symbols panel
 - color names panel (with real colors!)
 - All the other things
@@ -35,9 +42,13 @@
 ### Part II
 - Oh, the mystery
 - Multi-action/navigation
+- Shorthand/obj for navigation sequences
 
-#### Research
+#### Part II Research
 - bockly
+
+## Meta Research
+- VSTS for task management (visual studio team services)
 
 ### Panels
 - Part D(ata) --> Values home page could be
@@ -71,7 +82,6 @@
   - Find an npm snippet manager for atom and install/save it
   - TODO: Use user's own snippet manager
   - add navigation sequences
-- ~~-->~~ Shorthand/obj for navigation sequences (Part II)
 - Style highlighting for keys using the user's chosen themes!!!! (but how.....???)
 - Style css color names and colors as their color (calculate contrast from background to switch background color when needed)
 - ~~Simulate actual keypresses (for keys like 'del' and modifier keys)~~
@@ -99,9 +109,11 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
-- When currently open board group or board is hovered over, it should not change color
+- --> on hover show code that will appear in that spot - no click to see what happens!
+- "05/31/17" commit on 06/02/17 --> comment that synched up app config with atom config storage
 - Make sure cursor doesn't move when clicking on the board (if insert text, cursor loses place. WHY!?)
-- Research disposing of event listeners.
+  - Way to keep place in doc --> https://github.com/atom/snippets/blob/master/lib/snippets-available.js
+  - When keydown, unless chosen meta-key is down, focus on previously focused element
 - Nested requires so they don't have to be repeated for each panel
 - Composable View objects
 - --> Board navigation animations
@@ -124,6 +136,7 @@
 - "Outdent" as well as indent key (outdent key? or add a Shift key?) <- how to simulate holding down a modifier key?
 - QUESTION - Make sure each board group has an even number of tabs so no one can tell the keyboard doesn't look centered underneath... :S
   - --> Ooooor float tabs to the left (and maybe make them look more like tabs???)
+- ~Research disposing of event listeners~~ (done. maybe. doesn't need to be done it seems)
 - ~~*******WHY IS ATOM'S `state` OBJECT EMPTY ON INITIALIZATION!?!?!?!?!?!? (because the documentation wasn't clear/obvious)~~
 - ~~Hide app properly~~
 - ~~Initialize github repo~~
@@ -147,9 +160,9 @@
 - Top line on every tab to close everything in
 
 ## Settings
-- --> Keep gear icon highlighted when config is open...
 - Search bar...? (in the distant future)
 - User can custom configure min/max/close to be on the left instead??? (if horizontal)
+- ~~Keep gear icon highlighted when config is open~~
 - ~~Problem: settings take up precious vertical space and isn't used a lot. Solution 1: Settings as a right sidebar vs. topbar
   - Takes up less vertical space
   - There's plenty of horizontal space in this environment
@@ -173,6 +186,7 @@
 - top bar to contain tab section and config section separately
 
 ## Styling
+- When currently open board group or board is hovered over, it should not change color
 - Way to install different themes for boardz
 - ~~Remove width style from left sidebar~~
 - ~~Switch everything to "rem"~~
