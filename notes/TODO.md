@@ -23,10 +23,11 @@
 
 #### Part I Research
 - keyboard integration
-- snippets (https://github.com/atom/snippets/blob/master/lib/snippets.coffee)
+- snippets (~~https://github.com/atom/snippets/blob/master/lib/snippets.coffee~~ https://atom.io/packages/autocomplete-plus)
+  - *also look at this lib for testing spec ideas*
   - on hover or touch
     - show snippet on insertion/paste
-    - intercept "populate" or w/e and stick it with the panel key instead of the... text? Cursor? (https://github.com/atom/snippets/blob/master/lib/snippets.coffee#L302)
+    - intercept "populate" or w/e and stick it with the panel key instead of the... text? Cursor? ~~(https://github.com/atom/snippets/blob/master/lib/snippets.coffee#L302)~~
   - on click/lift in the same key/key's snippet choices
     - insert snippet
 - (abandoned because of cowardice) diagram test/spec ideas
@@ -76,6 +77,7 @@
   - snippet insertion
   - actions (before, during, after)
 - undo
+- comment
 - info?
 - style keys based on action
 - Insert snippets
@@ -109,11 +111,12 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
+- Change tabs to nav element and class/id and maybe history to buttons (nav too?). Tabs to buttons?!?!?!
 - --> on hover show code that will appear in that spot - no click to see what happens!
 - "05/31/17" commit on 06/02/17 --> comment that synched up app config with atom config storage
 - Make sure cursor doesn't move when clicking on the board (if insert text, cursor loses place. WHY!?)
   - Way to keep place in doc --> https://github.com/atom/snippets/blob/master/lib/snippets-available.js
-  - When keydown, unless chosen meta-key is down, focus on previously focused element
+  - ~~When keydown, unless chosen meta-key is down, focus on previously focused element~~ (mostly) `pane = atom.workspace.getActivePane(); pane.activate()`
 - Nested requires so they don't have to be repeated for each panel
 - Composable View objects
 - --> Board navigation animations
@@ -121,6 +124,7 @@
   - ~~Functionality~~
   - Animations
 - Find somewhere to name a function "motivate"! DO IT!!
+- Also use a "laserfocus" property on something!!!
 - WARNING scoped id's won't work when being searched for (when appearing on the search page)
   - for keys use ancestor in id name
   - for everything else, don't use id's, use pathTo's
@@ -217,6 +221,7 @@ Each list item is made of three parts:
 - https://arstechnica.com/apple/2012/05/25-years-of-hypercard-the-missing-link-to-the-web/ (wowsoclutch)
 
 # Unrelated
+- July 1st wowsoclutch b-day!! \o/
 - File issue in snippet package to use `let` in for loops instead of `var`
 - File caniuse github issue for "translate" global attribute of HTML
 - Typescriptenspeil
