@@ -23,13 +23,21 @@
 
 #### Part I Research
 - keyboard integration
-- snippets (~~https://github.com/atom/snippets/blob/master/lib/snippets.coffee~~ https://atom.io/packages/autocomplete-plus)
+- snippets (~~https://github.com/atom/snippets/blob/master/lib/snippets.coffee ~~ https://atom.io/packages/autocomplete-plus)
   - *also look at this lib for testing spec ideas*
   - on hover or touch
+    - "activatedManually: Whether the autocomplete request was initiated by the user (e.g. with ctrl+space)" on https://github.com/atom/autocomplete-plus/wiki/Provider-API
     - show snippet on insertion/paste
     - intercept "populate" or w/e and stick it with the panel key instead of the... text? Cursor? ~~(https://github.com/atom/snippets/blob/master/lib/snippets.coffee#L302)~~
   - on click/lift in the same key/key's snippet choices
     - insert snippet
+  - Options for insertion:
+    - User clicks on key, autocomplete shows up in editor, user clicks on autocomplete
+      - Super awkward
+    - User hovers over (holds for touch device), autocomplete shows up in panel, user clicks (releases for touch device) while on autocomplete to select a specific one or user clicks on the key to select first item on autocomplete
+      - Smoother, but no idea how to do it
+  - Pseudo
+    - get scope where cursor is at
 - (abandoned because of cowardice) diagram test/spec ideas
 - ~~package configs in atom and how those look~~
 
