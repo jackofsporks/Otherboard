@@ -203,10 +203,13 @@ osk-options-tab {
   border: 1px solid @active-border;
 }
 
-.osk-active-tab {
+.osk-active-tab,
+osk-language-tab.osk-active-tab:hover,
+osk-category-tab.osk-active-tab:hover {
   color: @text-color-highlight;
   background: @tool-panel-background-color;
   // border: 1px solid @active-border;
+  pointer-events: none;
 }
 
 osk-category-tab,

@@ -23,21 +23,7 @@
 
 #### Part I Research
 - keyboard integration
-- snippets (~~https://github.com/atom/snippets/blob/master/lib/snippets.coffee ~~ https://atom.io/packages/autocomplete-plus)
-  - *also look at this lib for testing spec ideas*
-  - on hover or touch
-    - "activatedManually: Whether the autocomplete request was initiated by the user (e.g. with ctrl+space)" on https://github.com/atom/autocomplete-plus/wiki/Provider-API
-    - show snippet on insertion/paste
-    - intercept "populate" or w/e and stick it with the panel key instead of the... text? Cursor? ~~(https://github.com/atom/snippets/blob/master/lib/snippets.coffee#L302)~~
-  - on click/lift in the same key/key's snippet choices
-    - insert snippet
-  - Options for insertion:
-    - User clicks on key, autocomplete shows up in editor, user clicks on autocomplete
-      - Super awkward
-    - User hovers over (holds for touch device), autocomplete shows up in panel, user clicks (releases for touch device) while on autocomplete to select a specific one or user clicks on the key to select first item on autocomplete
-      - Smoother, but no idea how to do it
-  - Pseudo
-    - get scope where cursor is at
+- snippets (see notes/snippets.md)
 - (abandoned because of cowardice) diagram test/spec ideas
 - ~~package configs in atom and how those look~~
 
@@ -119,6 +105,7 @@
 - Replace keys of row that's always there (with existing keys)
 
 ## Misc
+- When input through keyboard keep focus on osk?!?!
 - Change tabs to nav element and class/id and maybe history to buttons (nav too?). Tabs to buttons?!?!?!
 - --> on hover show code that will appear in that spot - no click to see what happens!
 - "05/31/17" commit on 06/02/17 --> comment that synched up app config with atom config storage
@@ -198,10 +185,18 @@
 - top bar to contain tab section and config section separately
 
 ## Styling
+- Inactive history nave (or anything) to have no pointer-events
 - When currently open board group or board is hovered over, it should not change color
 - Way to install different themes for boardz
 - ~~Remove width style from left sidebar~~
 - ~~Switch everything to "rem"~~
+
+### Icons
+- https://www.flaticon.com/free-icon/delete_159805#term=delete&page=1&position=31
+no: |->
+maybe: ->|
+√ yes: >|
+no: |>
 
 ## Dataz
 Each list item is made of three parts:
@@ -223,6 +218,9 @@ Each list item is made of three parts:
 - classes
 - ids
 
+# Bugs
+- Fix tab and delete and command buttons in general
+
 # Research
 - Alternative environments
  - Visual Studio Code (mobile devices?)
@@ -232,6 +230,7 @@ Each list item is made of three parts:
 - July 1st wowsoclutch b-day!! \o/
 - File issue in snippet package to use `let` in for loops instead of `var`
 - File caniuse github issue for "translate" global attribute of HTML
+- File atom issue checkpoint function descriptions do not include that you need to pass an argument to revert and all those other folks
 - Typescriptenspeil
   ~~1) You have a tab open. Don't close that tab!!!! (https://channel9.msdn.com/events/Build/2017/C9L25)~~
   2)  https://channel9.msdn.com/events/Build/2017/B8088
@@ -246,6 +245,15 @@ Each list item is made of three parts:
 - https://vimeo.com/69255635 (wowsoclutch)
 - Get those ears on 'hey young world' by slick rick (wowsoclutch)
 - Also hear 'Lemon Jelly - Nice weather for Ducks' (wowsoclutch)
+- "its gonna be a pain in the closing bracket" "may the semicolon be with you" - userman2
+- Listen to stream 06/12/17 @ 1 1/3 - 5 min with SomaFM on the DefCon station http://somafm.com/player/#/now-playing/defcon
+- Get ice cream into atom.fridge (userman2)
+- Check out frequencies - https://www.youtube.com/watch?v=cbDn1qvU81c - EkoJR
+- Enjoy exercise - wowsoclutch (Kappa)
+- "halt and catch fire" tv show that's so-so/ambivalence - wowsoclutch
+- "Look up wavenet to see where we're with sound recognition and generation" - Xartuo
+- "Make autocomplete minus plugin for beginners" - Xartuo
+- "shrug" autocomplete to "¯\_(ツ)_/¯"_ in OSX
 
 # Technical Questions
 
