@@ -226,6 +226,9 @@ Each list item is made of three parts:
  - Visual Studio Code (mobile devices?)
 - https://arstechnica.com/apple/2012/05/25-years-of-hypercard-the-missing-link-to-the-web/ (wowsoclutch)
 
+# Upkeep
+- Edit todo.cson (highlight styling) to make "IMPORTANT" a fancy color
+
 # Unrelated
 - July 1st wowsoclutch b-day!! \o/
 - File issue in snippet package to use `let` in for loops instead of `var`
