@@ -87,6 +87,9 @@
 ## Tabs
 - And for other items as well - allow replacement of text with icons
 
+## Atom bugs
+- Putting a keymapped command in the keymaps/osk.json makes osk take over the command even when it hasn't been activated. wtfiuwt?!?!
+
 ### Snippets
 #### Blank Slates
 - HTML
@@ -272,7 +275,7 @@ caller = {}
     }
     caller.someFunct() // returns true?
     caller.someProp = "something else"
-    caller.someFunct() // returns false?
+    caller.someFunct() // returns false? (what we want)
     // return caller
 // }
 ```
