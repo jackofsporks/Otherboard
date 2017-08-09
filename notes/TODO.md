@@ -234,6 +234,7 @@ Each list item is made of three parts:
 
 # Unrelated
 - July 1st wowsoclutch b-day!! \o/
+- ~~File atom issue to be able to search atom Settings page and Styles etc.~~ someone already filed it https://github.com/atom/settings-view/issues/284
 - File issue in snippet package to use `let` in for loops instead of `var`
 - File caniuse github issue for "translate" global attribute of HTML
 - File atom issue checkpoint function descriptions do not include that you need to pass an argument to revert and all those other folks
@@ -262,6 +263,8 @@ Each list item is made of three parts:
 - "shrug" autocomplete to "¯\_(ツ)_/¯"_ in OSX
 
 # Technical Questions
+QUESTION (2)
+Does atom really know what editor is active? Because autocomplete keeps confirming in the wrong editor which osk says is the same as the active editor which it gets from atom with getActiveTextEditor()
 
 QUESTION (1)
 How does this behave?
