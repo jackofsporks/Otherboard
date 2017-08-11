@@ -232,7 +232,7 @@ Each list item is made of three parts:
 # Upkeep
 - Edit todo.cson (highlight styling) to make "IMPORTANT" a fancy color
 
-# Unrelated
+# Slightly Related
 - July 1st wowsoclutch b-day!! \o/
 - ~~File atom issue to be able to search atom Settings page and Styles etc.~~ someone already filed it https://github.com/atom/settings-view/issues/284
 - File issue in snippet package to use `let` in for loops instead of `var`
@@ -261,6 +261,12 @@ Each list item is made of three parts:
 - "Look up wavenet to see where we're with sound recognition and generation" - Xartuo
 - "Make autocomplete minus plugin for beginners" - Xartuo
 - "shrug" autocomplete to "¯\_(ツ)_/¯"_ in OSX
+- Implement:
+```js
+let fridge = {}
+    fridge.freeziepop = "tasty mmmmm"
+    userman2.give(fridge.freeziepop)
+```
 
 # Technical Questions
 QUESTION (2)

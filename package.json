@@ -2,7 +2,7 @@
   "name": "osk",
   "main": "./lib/osk",
   "version": "0.1.0",
-  "description": "A short description of your package",
+  "description": "A virtual keyboard for coders' keywords",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "osk:toggle"
