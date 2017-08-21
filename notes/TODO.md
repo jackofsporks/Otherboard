@@ -267,6 +267,7 @@ let fridge = {}
     fridge.freeziepop = "tasty mmmmm"
     userman2.give(fridge.freeziepop)
 ```
+- Vid on coding while blind with speech2text https://www.youtube.com/watch?v=8SkdfdXWYaI - wowsoclutch
 
 # Technical Questions
 QUESTION (2)
