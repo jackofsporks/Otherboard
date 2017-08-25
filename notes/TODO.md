@@ -238,6 +238,7 @@ Each list item is made of three parts:
 - File issue in snippet package to use `let` in for loops instead of `var`
 - File caniuse github issue for "translate" global attribute of HTML
 - File atom issue checkpoint function descriptions do not include that you need to pass an argument to revert and all those other folks
+- File atom issue atom.keymaps.keystrokeForKeyboardEvent(e) returns lowercase when capslock is on
 - Typescriptenspeil
   ~~1) You have a tab open. Don't close that tab!!!! (https://channel9.msdn.com/events/Build/2017/C9L25)~~
   2)  https://channel9.msdn.com/events/Build/2017/B8088
