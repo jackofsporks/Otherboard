@@ -45,6 +45,9 @@
 ## Meta Research
 - VSTS for task management (visual studio team services)
 
+## Architecture
+- Move custom-settings folder etc to config folder because it's data not logic
+
 ### Panels
 - Part D(ata) --> Values home page could be
   - a menu page
