@@ -7,15 +7,46 @@
 - https://www.namecheckr.com/
 
 ## Next Actual Step (05/??/17)
-- Snippets and multi-action/navigation/cursor keys
+- keyboard integration
+  - keys cannot have hardcoded keyboard shortcuts (same shortcut may end up on same panel together)
+  - Keys will be assigned shortcuts one at a time when the panel appears
+  - ~~single letter keys will go first, then from l to r, t to b pick the first letter that is unique.~~
+  - Words by order of length and then l to r, t to b, pick the first unique letter.
+  - QUESTION What happens when all the key's letters are taken by other keys?
+   - ANSWER 1 show an alternative (a number? or something?!?!) in the corner of the key or on top of they key or...????
+  - Underlines/bold/some style is applied to triggering letter when the alt key is pressed (or whatever key combo is set)
+  - have to have a way to focus on keyboard
+    - QUESTION do you have to refocus on keyboard every time, or after insertion does the focus come back to the board?
+      - ANSWER 1 like sticky keys - combo to enter and exit keyboard sticky mode.
+  - UI key (top right?!?) to trigger keyboard/sticky mode?!?
+  - QUESTION when a key is triggered does it show the snippet options and then user confirms!?!? That sounds annoying as all get out!!
+    - ANSWER 1 there could be a different key combo (ctrl instead of alt...? cmd? both alts?) for automatically entering the first snoption (snippet option) (soption?) available.
+    - ~~ANSWER 2 a key combo to press to toggle a mode where the first snoption is automatically inserted. Annoying to switch between that and regular mode constantly (as I imagine myself doing)~~
+  - snippets should have a shortcut each too?!?! That's crazy talk!!!
+  - when in keyboard mode, show keyboard mode instructions (like keyboard sticky mode)
+  - when not in keyboard mode, show shortcut for keyboard mode
+  - allow user to turn those hints off. Also put those instructions elsewhere incase there's not enough room for them.
+  - keys:
+    - To focus/unfocus on keyboard: ctrl+alt+k+o (KO!) or o+k (OK!) or maybe just "k"
+    - Sticky/unsticky mode: cmd+alt+k
+    - Then no modifying key needed for regular functionality
+    - alt for automatically using first snippet or alt for showing all snippet options
+      - UI for switching those? (changing the key from alt would be somewhere else)
+  - UI to change shortcuts
+  - QUESTION should user be able to move cursor in the text when in keyboard mode?!?! (no...)
+  - QUESTION how to navigate between boards, panels, and history?!!?
+  - QUESTION do command keys like delete and tab just do their usual thing?!?
+- ~~Snippets~~ (todone!! for now!!)
+- ~~multi-action/simulation + navigation keys~~
 
 ## Next Steps
 ### Part I
 - ~~Config as actual useful object~~ (mostly)
 - Clean up where visual stuffs is happening (example: osk minimizing)
 - Compose `View` objects
-- Inserting snippets
-- Info boxes for keys (use library of awesome snippet manager I have yet to identify) (maybe Part III)
+- ~~Inserting snippets~~
+- ~~Info boxes for keys (use library of awesome snippet manager I have yet to identify) (maybe Part III)~~
+- Find a great snippet library with great descriptions
 - TESTING (TDM - Test Driven Maintenance)
   - Jest? (from wowsoclutch) (snapshots!)
     - https://facebook.github.io/jest/
@@ -23,7 +54,7 @@
 
 #### Part I Research
 - keyboard integration
-- snippets (see notes/snippets.md)
+- ~~snippets (see notes/snippets.md)~~
 - (abandoned because of cowardice) diagram test/spec ideas
 - ~~package configs in atom and how those look~~
 
@@ -54,6 +85,11 @@
   - a bunch of common dimension/color/file extension keys (or there could be a separate board/page for all of these, but name...?!?!)
 
 ### Keys
+- Give artificial scope temporarily to inserted text
+- Fix all keys to work with snippets
+- backward navigation?? (like from abc after having gotten there from element -> class... or something?!?!)
+- cursor keys (arrow keys?? What did I mean!??!!) (If I meant arrow keys I should save it for mobile devices?!?!)
+- Gestures to stand for keys?!?! like double swipe right for indent, left for unindent
 - Add key dynamically based on history (if came from <img src=""> and went to "abc", show link to "File Exts" panel)
   - The only idea I have of where to add keys dynamically is the lowest row where the spacebar is. This means:
     - ~~Work out how to center the frigging space bar properly~~
