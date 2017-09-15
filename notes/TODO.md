@@ -309,6 +309,8 @@ let fridge = {}
 ```
 - Vid on coding while blind with speech2text https://www.youtube.com/watch?v=8SkdfdXWYaI (awesomeness!!) - wowsoclutch
 - Check out streamer Kata (shaders?) - Xartuo
+- ralph wiggum is one of the greatest minds of our time - bagnalla
+- aqua team/teen hunger force -bagnalla, DarrnyH
 
 # Technical Questions
 QUESTION (2)
