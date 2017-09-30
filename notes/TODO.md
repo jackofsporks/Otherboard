@@ -75,6 +75,7 @@
 
 ## Meta Research
 - VSTS for task management (visual studio team services)
+- Put config on todo list
 
 ## Architecture
 - Move custom-settings folder etc to config folder because it's data not logic
@@ -267,6 +268,8 @@ Each list item is made of three parts:
 - Alternative environments
  - Visual Studio Code (mobile devices?)
 - https://arstechnica.com/apple/2012/05/25-years-of-hypercard-the-missing-link-to-the-web/ (wowsoclutch)
+- Voice chat mumble|discord|ventrilo|teamspeak, then build up a responsive site with psilent p pstrawberrie
+- pstrawberrie photoshop vid for slicing https://www.youtube.com/watch?v=8jOitBO9e94
 
 # Upkeep
 - Edit todo.cson (highlight styling) to make "IMPORTANT" a fancy color
@@ -311,6 +314,11 @@ let fridge = {}
 - Check out streamer Kata (shaders?) - Xartuo
 - ralph wiggum is one of the greatest minds of our time - bagnalla
 - aqua team/teen hunger force -bagnalla, DarrnyH
+- "Just Enough Software Architecture", "Clean Architecture" - Xartuo
+- warframe (space ninjas awesomeness!!!) - Deathpax
+- diff tween ssd & hdd youtube Techquickie - FuzzyButtGaming
+- stream bots nightbot & muxybot - pstrawberrie
+- does streamlabs window capture for chat put its own bot on irc? or does it piggyback off of twitch's bot?!????
 
 # Technical Questions
 QUESTION (2)

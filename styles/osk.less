@@ -180,6 +180,9 @@ osk .disabled:active {
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 osk {
   border-bottom: 1px solid @active-border;
+  &.real-board {
+    border-bottom: 1px solid @real-boarder;
+  }
 }
 
 osk, button.osk-key {
@@ -201,6 +204,9 @@ osk-language-tab,
 osk-category-tab,
 osk-options-tab {
   border: 1px solid @active-border;
+  .real-board & {
+    border: 1px solid @real-boarder;
+  }
 }
 
 .osk-active-tab,
@@ -208,7 +214,6 @@ osk-language-tab.osk-active-tab:hover,
 osk-category-tab.osk-active-tab:hover {
   color: @text-color-highlight;
   background: @tool-panel-background-color;
-  // border: 1px solid @active-border;
   pointer-events: none;
 }
 
@@ -217,6 +222,10 @@ osk-options-tab {
   border-left-color: @inactive-border;
   border-right: none;
   border-top: 1px solid @active-border;
+  .real-board & {
+    border-left-color: @real-boarder;
+    border-top: 1px solid @real-boarder;
+  }
   &:first-child {
     border-left: none;
   }
@@ -234,6 +243,12 @@ osk-language-tab {
 }
 
 osk-language-tab {
+  .real-board & {
+    border-top-color: @real-boarder;;
+    &:nth-child(2) { // first child is history
+      border-top-color: @real-boarder;;
+    }
+  }
   border-top-color: @inactive-border;
   &:nth-child(2) { // first child is history
     border-top-color: @active-border;
@@ -245,12 +260,6 @@ osk-language-tab {
     }
   }
 }
-
-// osk-history-arrow {
-//   &:first-child {
-//     border-right: none;
-//   }
-// }
 
 button.osk-key {
   border: 1px solid @key-border;

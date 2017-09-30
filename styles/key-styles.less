@@ -8,3 +8,17 @@
 osk .space {
   width: 15em;
 }
+
+osk .trigger-letter {
+  color: @text-color-highlight;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: @text-color-highlight;
+    left: 0; right: 0; margin: auto;
+    width: 60%;
+    bottom: -2px;
+  }
+}

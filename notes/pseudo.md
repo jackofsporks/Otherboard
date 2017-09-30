@@ -190,7 +190,7 @@ function iterate(remainder, parentNode) {
   - remove
   - get
   - getBy
-  - saveOpenPanel
+  - switchToPanel
 ### OSK
 - Properties
   - isOpen
@@ -205,7 +205,7 @@ function iterate(remainder, parentNode) {
   - toggle
   - saveReset
   - handleHistory
-  - saveOpenPanel (unique)
+  - switchToPanel (unique)
 ### Board Groups
 - Properties
   - type (unique)

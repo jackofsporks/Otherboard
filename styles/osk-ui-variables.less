@@ -1,12 +1,23 @@
 @import "ui-variables";
 // TODO make these into full styles (1px solid @color)
 
+@base-color: @base-background-color;
+@main-highlight: tomato;
+// Get it? Get it?! GET IT!?!
+@real-boarder: teal;
+
 // TODO make these top two into one thang
-@inactive-border: lighten(tomato, 3%);
+@inactive-border: lighten(@main-highlight, 3%);
 // @inactive-border: lighten(@base-background-color, 3%);
-@active-border: lighten(tomato, 3%);
+@active-border: lighten(@main-highlight, 3%);
 // @active-border: lighten(@base-background-color, 3%);
 // @active-border: lighten(@base-background-color, 5%);
-@key-border: lighten(@base-background-color, 10%);
+@key-border: lighten(@base-color, 10%);
+
 @dark-background: darken(@tool-panel-background-color, 1.8%);
 @dim-color: darken(@text-color-subtle, 30%);
+
+.real-board, .real-board * {
+  @base-color: teal;
+  @main-highlight: darken(teal, 90%);
+}

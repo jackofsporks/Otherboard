@@ -1,6 +1,7 @@
 {
   "atom-workspace": {
     "ctrl-alt-o": "osk:toggle",
-    "ctrl-alt-k": "osk:pin-board"
+    "ctrl-alt-k": "osk:temp-board",
+    "ctrl-alt-cmd-k": "osk:sticky-board"
   }
 }

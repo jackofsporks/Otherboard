@@ -13,9 +13,14 @@ osk-config-triggers, osk-minibar {
 }
 
 osk-config-triggers {
-  border-bottom: 1px solid @active-border;
   border-top: 1px solid @active-border;
+  border-bottom: 1px solid @active-border;
   border-left: 1px solid @inactive-border;
+  .real-board & {
+    border-top: 1px solid @real-boarder;
+    border-bottom: 1px solid @real-boarder;
+    border-left: 1px solid @real-boarder;
+  }
 }
 
 osk osk-minibar .icon {
@@ -30,9 +35,14 @@ osk-config {
   overflow: scroll;
   transition: max-height 0.2s, padding 0.2s;
   border-top: 1px solid @active-border;
-  border-left: 1px solid @active-border;
   border-bottom: 1px solid @active-border;
+  border-left: 1px solid @active-border;
   padding: 1rem;
+  .real-board & {
+    border-top: 1px solid @real-boarder;
+    border-bottom: 1px solid @real-boarder;
+    border-left: 1px solid @real-boarder;
+  }
 }
 
 osk-config.closed, osk-minibar.closed {
