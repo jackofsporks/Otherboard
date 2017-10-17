@@ -319,6 +319,7 @@ let fridge = {}
 - diff tween ssd & hdd youtube Techquickie - FuzzyButtGaming
 - stream bots nightbot & muxybot - pstrawberrie
 - does streamlabs window capture for chat put its own bot on irc? or does it piggyback off of twitch's bot?!????
+- Reasons
 
 # Technical Questions
 QUESTION (2)
